@@ -18,7 +18,10 @@ def money_to_float(string):
     """
     if type(string) == type(str()):
         string = string.replace("$","").replace(",","")
-        return float(string)
+        try:
+            return float(string)
+        except:
+            return string
     else:
         return string
 

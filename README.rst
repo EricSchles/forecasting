@@ -1,7 +1,7 @@
-forecaster
-=========
+forecasting
+===========
 
-**forecaster** provides a toolkit with for doing timeseries prediction.
+**forecasting** provides a toolkit with for doing timeseries prediction.
 This project builds heavily on the work of
 `scikit-learn <https://pypi.python.org/pypi/scikit-learn>`
 
