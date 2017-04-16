@@ -42,7 +42,9 @@ def forecast(forecast_periods, model, timeseries, sliding_window_size):
     result = model.fit(x,y)
     for i in range(forecast_periods):
         tmp = x[-1][:]
-        prediction = list(result.predict([tmp]))[0]
+        prediction = result.predict(tmp)
+        import code
+        code.interact(local=locals())
         y.append(prediction)
         tmp.append(prediction)
         tmp.pop(0)
